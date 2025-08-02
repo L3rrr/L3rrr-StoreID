@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>L3rrr Store</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #2c2c2c, #4a4a4a);
+    background-attachment: fixed;
+    color: white;
+    padding: 0;
+    position: relative;
+  }
+
+  /* Logo Anonymous transparan */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/9/9e/Anonymous_emblem.svg') center/contain no-repeat;
+    opacity: 0.07;
+    z-index: -1;
+  }
+
+  /* Running Text */
+  .marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.8);
+    border-bottom: 2px solid rgba(0,255,0,0.5);
+    box-shadow: 0 5px 10px rgba(0,255,0,0.3);
+  }
+
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 12s linear infinite;
+    font-size: 1.2rem;
+    background: linear-gradient(90deg, limegreen, green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @keyframes marquee {
+    0% {transform: translate(0, 0);}
+    100% {transform: translate(-100%, 0);}
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    background: linear-gradient(90deg, limegreen, green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 20px 0;
+    font-family: 'Cinzel Decorative', serif;
+  }
+
+  .store {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .product {
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,255,0,0.3), 0 0 10px rgba(0,255,0,0.3);
+    transition: transform 0.2s ease;
+  }
+
+  .product:hover {
+    transform: scale(1.05);
+  }
+
+  .product img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .product h2 {
+    background: linear-gradient(90deg, limegreen, green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10px 0;
+    font-family: 'Cinzel Decorative', serif;
+    font-style: italic;
+  }
+
+  .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, green, limegreen);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Cinzel Decorative', serif;
+  }
+
+  .desc {
+    font-size: 0.9rem;
+    color: #ddd;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(0,0,0,0.8);
+    border-top: 2px solid rgba(0,255,0,0.5);
+    text-align: center;
+    box-shadow: 0 -5px 10px rgba(0,255,0,0.3);
+  }
+
+  footer h3 {
+    font-size: 1.5rem;
+    background: linear-gradient(90deg, limegreen, green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: wave 3s infinite linear;
+  }
+
+  footer a {
+    color: limegreen;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  footer a:hover {
+    color: greenyellow;
+  }
+
+  @keyframes wave {
+    0% {letter-spacing: 1px;}
+    50% {letter-spacing: 3px;}
+    100% {letter-spacing: 1px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- Running Text -->
+<div class="marquee">
+  <span>🔥 WELCOME TO L3rrr STORE - L3rrr Store MENYEDIAKAN ↓  🔥</span>
+</div>
+
+<h1>L3rrr Store</h1>
+
+<div class="store">
+  <!-- 10 Produk -->
+  <div class="product">
+    <img src="https://img1.pixhost.to/images/7664/628009639_pipop.jpg" alt="Produk 1">
+    <h2>JASA MEMBUAT LOGO</h2>
+    <p class="price">Rp 1.000</p>
+    <p class="desc"></p>
+  </div>
+
+  <div class="product">
+    <img src="https://img1.pixhost.to/images/7664/628009639_pipop.jpg" alt="Produk 2">
+    <h2>NOKOS ALLREGION</h2>
+    <p class="price">Rp -</p>
+    <p class="desc">TERGANTUNG LU ORDER NOKOS APA</p>
+  </div>
+
+  <div class="product">
+    <img src="https://img1.pixhost.to/images/7664/628009639_pipop.jpg" alt="Produk 3">
+    <h2>JASBUG & JASBAND</h2>
+    <p class="price">Rp 5.000</p>
+    <p class="desc"></p>
+  </div>
+
+  <div class="product">
+    <img src="https://img1.pixhost.to/images/7664/628009639_pipop.jpg" alt="Produk 4">
+    <h2>JASA MEMBUAT WEBSITE</h2>
+    <p class="price">Rp 10.000</p>
+    <p class="desc">WEBSITE SEKOLAH, STORE, DLL</p>
+  </div>
+
+  <div class="product">
+    <img src="https://img1.pixhost.to/images/7664/628009639_pipop.jpg" alt="Produk 5">
+    <h2>RESELLER PANEL DAN PANEL</h2>
+    <p class="price">Rp 3.000-5.000</p>
+    <p class="desc">SPEK R32 C8</p>
+  </div>
+
+  <div class="product">
+    <img src="https://img1.pixhost.to/images/7664/628009639_pipop.jpg" alt="Produk 6">
+    <h2>SCRIPT BOT WA</h2>
+    <p class="price">Rp 10.000-30.000</p>
+    <p class="desc">SC BUG & SC MD</p>
+  </div>
+
+  <div class="product">
+    <img src="https://img1.pixhost.to/images/7664/628009639_pipop.jpg" alt="Produk 7">
+    <h2>TOOLS TERMUX</h2>
+    <p class="price">Rp 10.000</p>
+    <p class="desc">TOOLS TERMUX DAN DI BERI PENGAJARAN</p>
+  </div>
+
+  <div class="product">
+    <img src="https://img1.pixhost.to/images/7664/628009639_pipop.jpg" alt="Produk 8">
+    <h2>MURBUG & MURBAND</h2>
+    <p class="price">Rp 10.000</p>
+    <p class="desc">MURBUG SC GANAS MURBAND NYA FREE YAA</p>
+  </div>
+
+  <div class="product">
+    <img src="https://img1.pixhost.to/images/7664/628009639_pipop.jpg" alt="Produk 9">
+    <h2>NOMOR KARTU SIM</h2>
+    <p class="price">Rp 16.000</p>
+    <p class="desc">JIKA BUY PRODUK INI JANGAN BLOKIR NOMOR ADMIN UNTUK MEMINTA CODE VERIFIKASI JIKA TERJADI MASALAH</p>
+  </div>
+
+  <div class="product">
+    <img src="https://img1.pixhost.to/images/7664/628009639_pipop.jpg" alt="Produk 10">
+    <h2>APLIKASI RANSOMWARE & PUSH CH</h2>
+    <p class="price">Rp 5.000</p>
+    <p class="desc">APLIKASI RANSOMWARE DAN TUTORIALNYA, PUSH CH FREE YA</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <h3>Kontak & Grup</h3>
+  <p>📲 <a href="https://t.me/L3rrrXxX" target="_blank">TELE ADMIN</a></p>
+  <p>👥 <a href="https://chat.whatsapp.com/Iq9cIT8epoyBOD4eXVQ5zy?mode=ac_t" target="_blank">JOIN GRUP STORE</a></p>
+</footer>
+
+</body>
+</html>
